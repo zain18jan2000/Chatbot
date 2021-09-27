@@ -33,11 +33,11 @@ for intent in data['intents']:
         patterns.append(pattern)
         y.append(intent['tag'])
 
-# converting to lower case, applyging lemmatization removing the puctuations
+# converting all letters to lower case, applying lemmatization and removing the puctuations
 # here 'words' is our vocabulary containing all the words 
 words = [lemmatizer.lemmatize(word.lower()) for word  in words if word not in string.punctuation and 
         word not in stop_words]
-# converting the list to set to avoid doubling of words in in 'words'
+# converting the list to set to avoid doubling of words in variable 'words'
 words = sorted(set(words))
 words = list(words)
 
@@ -47,6 +47,8 @@ try:
 except:
     print("The filename ZBOT.h5 not found or the filename has been changed")
 
+ 
+# applying bag of words techniques to convert user's text in binary
 def bagofwords(msg):
     tokens = nltk.word_tokenize(msg)
     tokens = [lemmatizer.lemmatize(token.lower()) for token in tokens if token not in string.punctuation and token 
@@ -74,7 +76,7 @@ def prediction(msg):
             response = random.choice(intent['responses'])
             return response
 
-# to get user input in  multiples lines
+# to get user input we'll create a window
 from tkinter import *
 import tkinter as tk
 window = tk.Tk()
