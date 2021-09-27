@@ -5,9 +5,6 @@ Unlike Generative based Chatbots, This chatbot is trained on predefined input pa
 
 This repository contains following 3 files in 'Retrieval based Chatbots' folder,
 
-#text.json
-This file contains predefined input patterns and responses in dictionary structure of python. Our chatbot is trained on these input patterns and responses.\n
-#zbot.py
-This file contains code for text processing, text encoding and creating a window which acts as an interface between user and our chatbot. 
-#zbot.h5
-This is trained model of chatbot. 
+**text.json**. This file contains predefined input patterns and responses in dictionary structure of python. Our chatbot is trained on these input patterns and responses.<br/>
+**zbot.py**. This file contains code for text processing, text encoding and creating a window which acts as an interface between user and our chatbot. 
+**zbot.h5**. This is trained model of chatbot. 
