@@ -8,3 +8,5 @@ This repository contains following 3 files in 'Retrieval based Chatbots' folder,
 **text.json**. This file contains predefined input patterns and responses in dictionary structure of python. Our chatbot is trained on these input patterns and responses.<br/>
 **zbot.py**. This file contains code for text processing, text encoding and creating a window which acts as an interface between user and our chatbot. <br/>
 **zbot.h5**. This is trained model of chatbot. Although it is trained on the pre-defined chats in text.json, it can also be used for other predefined chats, but for that the model will have to be retrained.  
+
+<h2>GUI INTERFACE</h2><br>
