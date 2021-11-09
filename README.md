@@ -10,3 +10,4 @@ This repository contains following 3 files in 'Retrieval based Chatbots' folder,
 **zbot.h5**. This is trained model of chatbot. Although it is trained on the pre-defined chats in text.json, it can also be used for other predefined chats, but for that the model will have to be retrained.  
 
 <h2>GUI INTERFACE</h2><br>
+![chatbot](https://user-images.githubusercontent.com/82854685/140953741-9fb49d61-8dd9-4e67-b7c3-5cc6c5083cf1.JPG)
