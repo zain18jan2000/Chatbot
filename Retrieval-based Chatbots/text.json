@@ -58,8 +58,8 @@
     },
      {
     "tag":"thankful",
-     "patterns": ["thank you","thanks","ion does zain study?","what does zain do"],
-        "responses": ["My creater Zain studies in NED university", "he is an electronic engineering student"]
+     "patterns": ["thank you","thanks","ions does zain study"],
+        "responses": ["Welcome", "You are welcome","It's my pleasure"]
     },
     {"tag":"chatbot info",
         "patterns": ["where do you live","where is your residence?"],
