@@ -5,7 +5,7 @@
                             "How do you do?"],
              },
              {"tag": "age",
-              "patterns": ["how old are you?", "when is your birthday?", "when was you born?",'what is your date of birth?',"your birth date"],
+              "patterns": ["how old are you?", "when is your birthday?", "when was you born?","what is your date of birth?',"your birth date"],
               "responses": [ "I was born in 2021", 
                             "My birthday is January 3rd and I was born in 2021","03/01/2021"]
              },
@@ -23,34 +23,34 @@
               "patterns": [ "bye", "g2g", "see ya", "adios", "cya"],
               "responses": ["It was nice speaking to you", "See you later", "Speak soon!"]
              },
-             {"tag":'intro',
-              "patterns": ['tell me about your self','introduce yourself','i would like to know about you',
-                          'i want to about you'],
-              'responses': ['i am a chatbot that is all you should know','i am a chatbot and i was programmed by a programmer']
+             {"tag":"intro",
+              "patterns": ["tell me about your self","introduce yourself","i would like to know about you",
+                          "i want to about you"],
+              'responses': ["i am a chatbot that is all you should know","i am a chatbot and i was programmed by a programmer"]
              },
-             { 'tag':"intelligence",
-                 "patterns": ['you are intelligent','you seems to be intelligent','you are wise',
-                              'you are smart','you know you are smart'],
-              'responses': ['am I? thanks','thanks','I know']
+             { "tag":"intelligence",
+                 "patterns": ["you are intelligent","you seems to be intelligent","you are wise",
+                              "you are smart","you know you are smart"],
+              'responses': ["am I? thanks",'thanks',"I know"]
              },
-             {"tag":'abuse',
-     'patterns': ['you are stupid','you are trash','you are as bad as hell','get lost','you are bad',
-                'you are dump','you seems like garbage','shutup','go away','idiot'],
-     'responses': ['you know do not have mannners','shutup','same to you','you made me angry',
+             {"tag":"abuse",
+     "patterns": ["you are stupid","you are trash","you are as bad as hell","get lost","you are bad",
+                "you are dump","you seems like garbage","shutup","go away','idiot"],
+     "responses": ["you know do not have mannners","shutup","same to you","you made me angry",
                   'mind your language']},
     
-    {'tag':"stupidity",
-     'patterns':['you are stupid','you are not intelligent','you are not smart','stupid',
-                 'you are lazy','you are not replying properly',"I didn't ask that",
+    {"tag":"stupidity",
+     "patterns":["you are stupid","you are not intelligent","you are not smart","stupid",
+                 "you are lazy","you are not replying properly","I didn't ask that",
                  "that's not my answer","why are you not replying"],
      'responses': ['I am not smart enough to reply always accurately', 
                   'I am not trained to reply each and every response']
     },
     {
-     'tag': 'undefined',
-      'patterns':['oh i see','i know','i see','so that is the problem','haha','hahaha','hahahaha','oh',
-                 'yeah i know','it is fine',"It's fine"],
-     'responses':[' '] 
+     "tag": "undefined",
+      "patterns":["oh i see","i know","i see","so that is the problem","haha","hahaha","hahahaha","oh",
+                 "yeah i know","it is fine","It's fine"],
+     "responses":[' '] 
     },
      { 'tag':' joke',
     'patterns': ['tell me a joke','do you know any joke?'],
