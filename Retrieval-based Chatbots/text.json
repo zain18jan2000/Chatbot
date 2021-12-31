@@ -1,11 +1,11 @@
 {"intents": [
              {"tag": "greeting",
-              "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up",'hey'],
+              "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up","hey"],
               "responses": ["Howdy Partner!", "Hello", "How are you doing?", "Greetings!",
                             "How do you do?"],
              },
              {"tag": "age",
-              "patterns": ["how old are you?", "when is your birthday?", "when was you born?",'what is your date of birth?','your birth date'],
+              "patterns": ["how old are you?", "when is your birthday?", "when was you born?",'what is your date of birth?',"your birth date"],
               "responses": [ "I was born in 2021", 
                             "My birthday is January 3rd and I was born in 2021","03/01/2021"]
              },
@@ -36,7 +36,7 @@
              {"tag":'abuse',
      'patterns': ['you are stupid','you are trash','you are as bad as hell','get lost','you are bad',
                 'you are dump','you seems like garbage','shutup','go away','idiot'],
-     'responses': ['you know donot have mannners','shutup','same to you','you made me angry',
+     'responses': ['you know do not have mannners','shutup','same to you','you made me angry',
                   'mind your language']},
     
     {'tag':"stupidity",
