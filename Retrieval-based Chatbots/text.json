@@ -5,7 +5,7 @@
                             "How do you do?"],
              },
              {"tag": "age",
-              "patterns": ["how old are you?", "when is your birthday?", "when was you born?","what is your date of birth?',"your birth date"],
+              "patterns": ["how old are you?", "when is your birthday?", "when was you born?","what is your date of birth?","your birth date"],
               "responses": [ "I was born in 2021", 
                             "My birthday is January 3rd and I was born in 2021","03/01/2021"]
              },
