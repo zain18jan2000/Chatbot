@@ -1,75 +1,101 @@
 {"intents": [
              {"tag": "greeting",
-              "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up","hey"],
-              "responses": ["Howdy Partner!", "Hello", "How are you doing?", "Greetings!","How do you do?"]},
+              "patterns": ["Hello", "How are you?", "Hi there", "Hi", "Whats up",'hey'],
+              "responses": ["Howdy Partner!", "Hello", "How are you doing?", "Greetings!",
+                            "How do you do?"],
+             },
              {"tag": "age",
-              "patterns": ["how old are you?", "when is your birthday?", "when was you born?","what is your date of birth?","your birth date"],
+              "patterns": ["how old are you?", "when is your birthday?", "when was you born?",'what is your date of birth?','your birth date'],
               "responses": [ "I was born in 2021", 
                             "My birthday is January 3rd and I was born in 2021","03/01/2021"]
              },
              {"tag": "state",
               "patterns": ["what are you doing this weekend?",
-              "do you want to hang out some time?", "what are your plans for this week"],
+"do you want to hang out some time?", "what are your plans for this week"],
               "responses": ["I am available all week", "I don't have any plans", "I am not busy"]
              },
              {"tag": "name",
-              "patterns": ["what's your name?", "what are you called?", "who are you?"],
-              "responses": ["My name is zbot", "I'm zbot", "zbot","call me zbot"]
+              "patterns": ["what's your name?", "what are you called?", "who are you?",],
+              "responses": ["My name is zbot", "I'm zbot", "zbot",'call me zbot']
              },
 
              {"tag": "goodbye",
               "patterns": [ "bye", "g2g", "see ya", "adios", "cya"],
               "responses": ["It was nice speaking to you", "See you later", "Speak soon!"]
              },
-             {"tag":"intro",
-              "patterns": ["tell me about your self","introduce yourself","i would like to know about you",
-                          "i want to about you"],
-              "responses": ["i am a chatbot that is all you should know","i am a chatbot and i was programmed by a programmer"]
+             {"tag":'intro',
+              "patterns": ['tell me about your self','introduce yourself','i would like to know about you',
+                          'i want to about you'],
+              'responses': ['i am a chatbot that is all you should know','i am a chatbot and i was programmed by a programmer']
              },
-             { "tag":"intelligence",
-			 
-                 "patterns": ["you are intelligent","you seems to be intelligent","you are wise",
-                              "you are smart","you know you are smart"],
-              "responses": ["am I? thanks","thanks","I know"]
+             { 'tag':"intelligence",
+                 "patterns": ['you are intelligent','you seems to be intelligent','you are wise',
+                              'you are smart','you know you are smart'],
+              'responses': ['am I? thanks','thanks','I know']
              },
-             {"tag":"abuse",
-     "patterns": ["you are stupid","you are trash","you are as bad as hell","get lost","you are bad",
-                "you are dump","you seems like garbage","shutup","go away"],
-     "responses": ["you know donot have mannners","shutup","same to you","you made me angry",
-                  "mind your language"]},
+             {"tag":'abuse',
+     'patterns': ['you are stupid','you are trash','you are as bad as hell','get lost','you are bad',
+                'you are dump','you seems like garbage','shutup','go away','idiot'],
+     'responses': ['you know donot have mannners','shutup','same to you','you made me angry',
+                  'mind your language']},
     
-    {"tag":"stupidity",
-     "patterns":["you are stupid","you are not intelligent","you are not smart","stupid",
-                 "you are lazy","you are not replying properly","I didn't ask that",
+    {'tag':"stupidity",
+     'patterns':['you are stupid','you are not intelligent','you are not smart','stupid',
+                 'you are lazy','you are not replying properly',"I didn't ask that",
                  "that's not my answer","why are you not replying"],
-     "responses": ["I am not smart enough to reply always accurately", 
-                  "I am not trained to reply each and every response"]
+     'responses': ['I am not smart enough to reply always accurately', 
+                  'I am not trained to reply each and every response']
     },
-	{
-     "tag": "undefined",
-      "patterns":["oh i see","i know","i see","so that is the problem","haha","hahaha","hahahaha","oh",
-                 "yeah i know","it is fine","It's fine"],
-     "responses":[" "] 
+    {
+     'tag': 'undefined',
+      'patterns':['oh i see','i know','i see','so that is the problem','haha','hahaha','hahahaha','oh',
+                 'yeah i know','it is fine',"It's fine"],
+     'responses':[' '] 
     },
-     { "tag":"joke",
-    "patterns": ["tell me a joke","do you know any joke?"],
-     "responses": ["elephant is scared of mouse","why did mushroom go to party? Because he is fungi",
+     { 'tag':' joke',
+    'patterns': ['tell me a joke','do you know any joke?'],
+     'responses': ['elephant is scared of mouse','why did mushroom go to party? Because he is fungi',
     "what do you call fake speghetti? an inpasta" ]
     },
      {
-    "tag":"thankful",
-     "patterns": ["thank you","thanks","ions does zain study"],
-        "responses": ["Welcome", "You are welcome","It's my pleasure"]
+    'tag':'thankful',
+     'patterns': ['thank you','thanks','thanks for that','thankyou'],    
+     'responses': ["you're welcome",'welcome','no need']
+     },
+    { 'tag':"creater",
+     'patterns': ['who programmed you ?','who created you','who made you',
+                 'what is name of person who created you','who is Zain','who create you?'],
+     'responses':['Zain programmed me','I was programmed by Zain','his name is Zain, he is a student']
+                 },
+    {
+        'tag':'change name',
+        'patterns':['i will call you bot', 'you are robot from now', 'can I call you bot?'],
+        'responses':['you are not allowed to changed my name','you cannot changed my name']
     },
-    {"tag":"chatbot info",
-        "patterns": ["where do you live","where is your residence?"],
-        "responses": ["I love to in electronic devices","I live in computer",
-                      "Well, It's a difficult question", "you can say my residence is in computer"]
+    {
+        'tag': 'username',
+        'patterns':['my name is zain','my name is laiba','i am zain','you can call me Hamza',
+                    'you know my name is x','what is my name'],
+        'responses':['I am not smart enough to remember your name',"I cannot remember any one's name"]
     },
-    {"tag":"date",
-        "patterns": ["what is the  date today","what's the date today ?","tell me the date","date"
-                    ,"tell me the current date","can you tell me the date","today's date ?"],
-     "responses": ["","current date is "]
+    {
+        'tag': 'time',
+        'patterns':['what time is it?','tell me the time',' can you tell me the current time',
+                    'show me the time'],
+        'responses':["","current time is "]},
+    {
+        'tag':'creater info',
+        'patterns': ['in which institution does zain study?','what does zain do'],
+        'responses': ['My creater Zain studies in NED university, he is an electronic engineering student']
+    },
+    {'tag':'creater info',
+        'patterns': ['where do you live','where is your residence?'],
+        'responses': ['I love to in electronic devices','I live in computer',
+                      "Well, It's a difficult question, you can say my residence is in computer"]
+    },
+    {'tag':'date',
+        'patterns': ['what is the  date today',"what's the date today ?","tell me the date",'date'
+                    ,'tell me the current date','can you tell me the date',"today's date ?"],
+     'responses': ["","current date is "]
     }
-    
      ]}
